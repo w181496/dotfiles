@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[core]
+# Please adapt and uncomment the following lines:
+[user]
+	name = w181496
+	email = w181496@gmail.com
+[core]
+    editor = vim
+	compression = 0
+[credential]
+	helper = store
