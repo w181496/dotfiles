@@ -19,5 +19,10 @@ echo 'Setting git...'
 rm -rf ~/.gitconfig
 ln -sf $DIR/.gitconfig ~/.gitconfig
 
+# tmux
+echo 'Setting tmux...'
+rm -rf ~/.tmux.conf
+ln -sf $DIR/.tmux.conf ~/.tmux.conf
+
 # tool
 # bash ./sec.sh
