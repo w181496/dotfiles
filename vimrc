@@ -1,5 +1,6 @@
 set encoding=utf-8
 set fileencodings=utf-8,cp950
+set shell=bash
 syntax on
 colorscheme torte
 set shiftwidth=4
@@ -20,3 +21,15 @@ hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred guifg=wh
 "set bg=light
 "set cursorcolumn
 
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tomlion/vim-solidity'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
