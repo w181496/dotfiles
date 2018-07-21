@@ -15,9 +15,17 @@ endsnippet
 
 snippet pwn "pwn" b
 from pwn import *
-r = remote('localhost',1234)
+r = remote('${1:localhost}', ${2:1234})
 
 r.interactive()
+endsnippet
+
+snippet rr "recvuntil" b
+r.recvuntil('${1::}')
+endsnippet
+
+snippet rs "sendline" b
+r.sendline('${1:}')
 endsnippet
 
 ############################
